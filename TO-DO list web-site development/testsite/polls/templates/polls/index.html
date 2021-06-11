@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<title>To-Do List</title>
+	</head>
+	<body>
+		<h1>To-Do</h1>
+		<table>
+			{% for list in To_do_list %}
+			<ul>
+				<li>{{list.plan}}</li>
+				<li>{{list.due_date}}</li>
+				<li>{{list.completed}}</li>
+			</ul>
+			{% endfor %}
+		</table>
+	</body>
+</html>
